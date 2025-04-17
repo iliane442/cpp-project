@@ -24,6 +24,7 @@ class Trans{
         double get_v_sortie();
         bool get_sens();
         int get_nb_arbres();
+        Arbre get_arbre();
 
     //setters
         void set_v_entree(double v_entree);

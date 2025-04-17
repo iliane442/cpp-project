@@ -23,6 +23,7 @@ int Trans::get_nb_arbres(){
 }
 
 
+
 void Trans::set_v_entree(double v_e){
     v_entree = v_e;
 }
