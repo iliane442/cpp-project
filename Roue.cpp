@@ -5,13 +5,16 @@
 Roue::Roue(double module, int nbDents){
     M = module;
     Z = nbDents;
+    D = M*Z; // Calcul du diamètre
 }
 
 Roue::Roue(int diametre, double module){
     D = diametre; 
     M = module ;    
+    Z = D/M; // Calcul du nombre de dents
 }
-Roue::Roue(void){
+Roue::~Roue() {
+    // Rien à nettoyer pour l'instant, mais il est défini pour éviter les erreurs de linkage
 }
 
 double Roue::getZ(){

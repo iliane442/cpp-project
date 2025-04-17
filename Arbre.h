@@ -1,5 +1,5 @@
 //Arbre.h
-#define Arbre_h
+#pragma once // pour éviter les inclusions multiples
 #include "Roue.h"
 
 class Arbre{

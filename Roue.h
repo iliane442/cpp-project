@@ -1,5 +1,5 @@
 //Roue.h
-#define Roue_h
+#pragma once // pour éviter les inclusions multiples
 
 class Roue{
     private :
@@ -15,10 +15,13 @@ class Roue{
         
     //destructeur
         ~Roue(void);
-
+    
+    //getter
         double getZ();
         double getD();
         double getM();
+    
+    //setter
         void setD(double);
         void setZ(int);
         void setM(double);

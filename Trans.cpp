@@ -9,6 +9,10 @@ Trans::Trans(double v_e, double v_s, int n_arbres, bool S){
     sens = S;
 }
 
+Trans::~Trans(){
+    // Rien à nettoyer pour l'instant, mais il est défini pour éviter les erreurs de linkage
+}
+
 double Trans::get_v_entree(){
     return v_entree;
 }
